@@ -1,0 +1,32 @@
+nav {
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.nav-item.active {
+
+    color: #ffffff;
+    background-color: #333; 
+}
+
+
+a.nav-link:hover {
+      color: #c51919;
+      background-color: rgb(179, 24, 24);
+  }
+.nav {
+    font-size: 20px;
+    color: #ecec3b;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+  }
+
+a.active {
+    color:rgb(0, 0, 0);
+    background-color: #c51919;
+}
