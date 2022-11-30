@@ -1,32 +1,84 @@
-nav {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar-brand{
+  color: black;
+}
+
+#navbarNav {
     height: 100px;
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+    padding: 0 12px;
   }
 
-.nav-item.active {
+.nav-link {
+  font-weight: 700;
+  font-size: 5px;
+  border-radius: 15px;
+  margin: 0 12px;
+  color: #303030;
+  text-align: center;
+}
 
-    color: #ffffff;
-    background-color: #333; 
+.active {
+  color:rgb(255, 255, 255);
+  background-color: #9dc183;
+  border-radius: 15px;
+  width: 85px;
+  height: 40px;
 }
 
 
-a.nav-link:hover {
-      color: #c51919;
-      background-color: rgb(179, 24, 24);
-  }
-.nav {
-    font-size: 20px;
-    color: #ecec3b;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
-  }
+/* NAV HOVER EFFECTS */
 
-a.active {
-    color:rgb(0, 0, 0);
-    background-color: #c51919;
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+
+.navbar .navbar-nav .nav-item-hover {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item-hover::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000000;
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item-hover:hover::after {
+  width: 100%;
+}
+
+.active:hover {
+      background-color: #9da58f;
+
+} 
+
+
+/* ABOUT ME */
+
+.about-me-container {
+  padding-top: 20px;
+}
+
+.text--green{
+  color: #9dc183; 
 }
