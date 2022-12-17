@@ -12,7 +12,7 @@
 }
 
 #navbarNav {
-    height: 100px;
+    max-height: 90px;
     width: 100%;
     justify-content: flex-end;
     padding: 0 12px;
@@ -76,10 +76,10 @@
 /* ABOUT ME */
 
 .about-me-container {
-  padding-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align:  center;
+  align-items: center;
+  max-width: 900px;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .text--green{
@@ -95,8 +95,6 @@
 
 .body {
   text-align: center;
-  margin-right: 300px;
-  margin-left: 300px;
 }
 
 h2 {
@@ -104,8 +102,18 @@ h2 {
   font-size: 25px;
 
 }
+
+.linus {
+  margin: 20px;
+}
+
 /* Ideal job */
 
 .ideal-job-container {
-  margin-top: 100px;
+  margin-top: 50px;
+  align-items: center;
+  max-width: 900px;
+  text-align: center;
+  max-height: 900px;
+  height: 900px;
 }
